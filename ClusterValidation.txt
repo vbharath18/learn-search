@@ -1,0 +1,7 @@
+curl https://localhost:9200 -ku admin:BaileyPepsi189#
+
+curl -H "Content-Type: application/x-ndjson" -X PUT "https://localhost:9200/ecommerce" -ku admin:BaileyPepsi189# --data-binary "@ecommerce-field_mappings.json"
+
+curl -H "Content-Type: application/x-ndjson" -X PUT "https://localhost:9200/ecommerce/_bulk" -ku admin:BaileyPepsi189# --data-binary "@ecommerce.json"
+
+curl -H "Content-Type: application/x-ndjson" -X PUT "https://localhost:9200/ecommerce/_bulk" -ku admin:BaileyPepsi189# --data-binary "@ecommerce.json"
